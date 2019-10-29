@@ -20,4 +20,4 @@ To authenticate, use the admin site: localhost:8000/admin
 Add a few users
 Create loans and assign to users,
 
-Test the API at localhost:8000/score/<username>
+Test the API at localhost:8000/score/*username*
