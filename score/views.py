@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
-from .utils import credit_score
+from .utils import creditScore
 
 class IndexView(APIView):
 
@@ -15,7 +15,7 @@ class IndexView(APIView):
 
         requested_user = get_object_or_404(User, username=username)
 
-        score, risk_level = credit_score(requested_user)
+        score, risk_level = creditScore(requested_user)
 
         content = {'user': requested_user.username,
                    'score':score,
